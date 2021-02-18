@@ -1,5 +1,7 @@
 local RBXWait = require(PATH.RBXWait) -- Replace this with the path leading to the RBXWait ModuleScript!
 
+
+
 local function FastDelay(...)
 	local Len = select('#', ...)
 	if Len < 2 then
@@ -16,6 +18,7 @@ local function FastDelay(...)
 		return Callback(YieldTime, TimePassed, ...)
 	end)(select(3, ...))
 end
+
 local function FastDebris(Item, Lifetime)
 	if typeof(Item) ~= 'Instance' then
 		error('Unable to cast value to Object', 2)
