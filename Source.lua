@@ -32,3 +32,8 @@ local function FastDebris(Item, Lifetime)
 		end
 	end)
 end
+
+return {
+	delay = FastDelay,
+	AddItem = FastDebris
+}
